@@ -6,10 +6,6 @@ import PackingList from './PackingList';
 
 export default function App() {
   const [items, setItems] = useState([]);
-  // Derived states: never define and use new state like below
-  // const [numItems, setNumItems] = useState(0);
-  // Always derive state by creating new variable like this: (in this example we will move variable to the Stats component])
-  // const numItems = items.length;
 
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
